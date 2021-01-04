@@ -89,6 +89,22 @@ h2::after {
   line-height: 145%;
 }
 
+/* links */
+a:link,
+a:visited {
+  text-decoration: none;
+  color: #e67e22;
+  border-bottom: 1px solid #e67e22;
+  padding: 1px;
+  transition: all 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
 /* buttons */
 .btn:link,
 .btn:visited {
@@ -254,18 +270,16 @@ header {
 .steps-box:last-child {
   padding-left: 3%;
   margin-top: 70px;
-
 }
 
 .clearfix::after {
-  content: "";
+  content: '';
   clear: both;
   display: block;
 }
 
 .section-steps {
-  background-color: rgba(241, 239, 239, 0.877)
-  
+  background-color: rgba(241, 239, 239, 0.877);
 }
 
 .app-screen {
@@ -293,8 +307,40 @@ header {
   margin-right: 25px;
 }
 
+.btn-app:link,
+.btn-app:visited {
+  border: none;
+}
+
 .btn-app img {
   height: 50px;
   width: auto;
   margin-right: 10px;
+}
+
+/* ----------------------------------------- */
+/* Cities */
+/* ----------------------------------------- */
+
+/* SELF: This was done as icon-small in other script */
+.section-cities ion-icon {
+  color: #e67e22;
+  display: inline-block;
+  width: 30px;
+  font-size: 125%;
+
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 10px;
+}
+
+.section-cities img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.city-feature {
+  margin-bottom: 5px;
 }
