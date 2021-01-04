@@ -482,7 +482,7 @@ textarea {
   border: 1px solid #ccc;
 }
 
-input[type=checkbox]{
+input[type='checkbox'] {
   transform: scale(1.5);
   margin: 10px 10px 10px 0;
 }
@@ -491,6 +491,89 @@ textarea {
   height: 200px;
 }
 
-*:focus{
-  outline-color:rgba(223, 123, 35, 0.801);
+*:focus {
+  outline-color: rgba(223, 123, 35, 0.801);
+}
+
+/* ----------------------------------------- */
+/* Footer */
+/* ----------------------------------------- */
+
+footer {
+  padding: 50px;
+  background-color: #333;
+  font-size: 80%;
+}
+
+.footer-nav {
+  list-style: none;
+  float: left;
+}
+
+.social-links {
+  list-style: none;
+  float: right;
+}
+
+.footer-nav li,
+.social-links li {
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.footer-nav li:last-of-type,
+.social-links li:last-of-type {
+  margin-right: 0;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-links a:link,
+.social-links a:visited {
+  color: #888;
+  text-decoration: none;
+  border: none;
+  transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active {
+  color: #ddd;
+}
+
+.social-links a:link,
+.social-links a:visited {
+  font-size: 160%;
+}
+
+ion-icon[name='logo-facebook'],
+ion-icon[name='logo-twitter'],
+ion-icon[name='logo-instagram']{
+  color: #ddd;
+  transition: color 0.3s, transform 0.3s;
+}
+
+ion-icon[name='logo-facebook']:hover,
+ion-icon[name='logo-facebook']:active {
+  color: #3b5998;
+  transform: scale(1.2);
+}
+
+ion-icon[name='logo-twitter']:hover,
+ion-icon[name='logo-twitter']:active {
+  color: #1da1f2;
+  transform: scale(1.2);
+}
+
+ion-icon[name='logo-instagram']:hover,
+ion-icon[name='logo-instagram']:active {
+  color: #c32aa3;
+  transform: scale(1.2);
+}
+
+.copyright {
+  color: #888;
+  text-align: center;
+  font-size: 90%;
+  margin-top: 10px;
 }
