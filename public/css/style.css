@@ -467,15 +467,9 @@ cite img {
 /* ----------------------------------------- */
 /* Form */
 /* ----------------------------------------- */
-.section-form {
-  border: 5px solid cyan;
-}
-
 .contact-form {
   width: 60%;
   margin: 0 auto;
-  /* padding: 20px; */
-  /* border: 5px solid green; */
 }
 
 input[type='text'],
